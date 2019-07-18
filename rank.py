@@ -1,6 +1,7 @@
 from pathlib import Path
 import importlib
 import sys
+from evaluator import evaluate_code
 
 def get_kata_test(kata: str):
     """
@@ -25,6 +26,8 @@ def evaluate_candidates(kata_test):
             kata_test(participant_module.sum_dig_pow)
         except AssertionError as e:
             print("TEST FAILED! %s" % e)
+        else:
+            print(evaluate_code(kata_test, participant_module.sum_dig_pow, str(p_script.absolute())))
 
 
 if __name__ == "__main__":
