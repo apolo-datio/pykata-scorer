@@ -39,3 +39,20 @@ python -m radon cc -s -a paths radon_test.py
 ```bash
 python -m radon mi -s paths radon_test.py
 ```
+
+
+##Basic Instructions
+
+###Step 1
+
+In folder "participants" leave the corresponding .py files.
+
+###Step 2
+
+In folder kata_tests change the assert list and "def".
+
+###Step 3
+
+In rank.py leave def and kata_test = get_kata_test("kataX") to which it corresponds.
+Run rank.py
+
